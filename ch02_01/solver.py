@@ -47,7 +47,7 @@ class Sudoku(object):
 
 
 def dfs(board: Sudoku, res: list[Field], all: bool):
-    if not all and len(res) == 0:
+    if not all and len(res) != 0:
         return
 
     x, y = board.find_empty()
